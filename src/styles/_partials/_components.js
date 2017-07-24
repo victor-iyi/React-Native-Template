@@ -1,6 +1,7 @@
 const color = require('./_colors');
 
 module.exports = {
+  // button component styling
   button: {
     backgroundColor: color.mediumvioletred,
     margin: 5,
