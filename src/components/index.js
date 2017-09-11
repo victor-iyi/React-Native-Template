@@ -1,5 +1,5 @@
 import Button from './Button';
 
 module.exports = {
-  Button: Button
+  Button: Button,
 };

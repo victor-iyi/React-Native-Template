@@ -1,6 +1,14 @@
 import { StackNavigator } from 'react-navigation';
 import Home from './Home';
 
+/**
+/**************************
+ * Main App Navigator     *
+ **************************
+ */
 export default StackNavigator({
-  Home: { screen: Home, },
+  // Home Page
+  Home: {
+    screen: Home
+  },
 });

@@ -1,20 +1,22 @@
-import React from 'react';
-import { AppRegistry, View, Text } from 'react-native';
+import React, { Component } from 'react';
+import { AppRegistry, StatusBar, View } from 'react-native';
 import AppNavigator from './src/navigators';
 import { styles } from './src/styles';
 
-class App extends React.Component {
-
+class App extends Component {
   render() {
     return (
       <View style={styles.wrapper}>
-        <AppNavigator ref={nav => { this.navigation = nav; }} />
+        <StatusBar barStyle="default" hidden={false} />
+        <AppNavigator
+          ref={nav => {
+            this.navigation = nav;
+          }}
+        />
       </View>
     );
   }
-
 }
-
 
 AppRegistry.registerComponent('Template', () => App);
 
