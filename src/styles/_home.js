@@ -1,6 +1,6 @@
-const color = require('./_partials/_colors.js');
+import color from './_partials/_colors.js';
 
-module.exports = {
+export default {
   homeContainer: {
     flex: 1,
     alignItems: 'center',
